@@ -14,16 +14,16 @@ target = "192.168.42.0/24"
 }
 }
 
-resource "zerotier_member" "alice" {
-name        = "alice"
-member_id   = "a11c3411ce"
-description = "Alice's laptop"
+resource "zerotier_member" "JOY" {
+name        = "joy"
+member_id   = "2d239ff869"
+description = "joy phone"
 network_id  = zerotier_network.hello.id
 }
 
-resource "zerotier_member" "bob" {
-name        = "bob"
-member_id   = "b0bd0bb0bb"
-description = "Bob's laptop"
+resource "zerotier_member" "jl" {
+name        = "jl"
+member_id   = "045a541f06"
+description = "joy's laptop"
 network_id  = zerotier_network.hello.id
 }
